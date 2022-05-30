@@ -22,11 +22,11 @@ void showInstructions()
 { 
 	printf("\nChoose a numbere from 1 to 9 \n\n"); 
 	
-	printf("1 | 2 | 3 \n"); 
+	printf("0  | 1 | 2\n"); 
 	printf("----------\n"); 
-	printf("4 | 5 | 6 \n"); 
+	printf("3  | 4 | 5 \n"); 
 	printf("-----------\n"); 
-	printf(" 7 | 8 | 9 \n\n"); 
+	printf(" 6 | 7 | 8 \n\n"); 
 } 
 
 // A function to initialise the game 
@@ -154,21 +154,23 @@ void play(int turn)
 
     if(turn == COMPUTER)
     {
-        n = bestMove(board);
+        	n = bestMove(board);
 		x = n / side;
 		y = n % side;
 		board[x][y] = COMPUTERMOVE;
-        showBoard(board);
-        turn = HUMAN;
+        	showBoard(board);
+        	turn = HUMAN;
 
     }
 
     else if (turn == HUMAN)
     {
+    	
+						
           printf("\n\nEnter the position 1 to 9 = ");
           scanf("%d",&n);
           x = n / side;
-		  y = n % side; 
+	  y = n % side; 
           if(board[x][y] == ' ' )
           {
               board[x][y] = HUMANMOVE; 
