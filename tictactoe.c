@@ -183,10 +183,8 @@ void play(int turn)
 
 int main() 
 { 
-	printf("Tic-Tac-Toe\n"); 
-    char cont='y';
-        do {
-
+	    printf("Tic-Tac-Toe\n"); 
+       
             char choice;
             printf("Do you want to start first?(y/n) : ");
             scanf(" %c", &choice);
@@ -198,9 +196,7 @@ int main()
             else
                 printf("Invalid choice\n"); 
 
-            printf("\nDo you want to quit(y/n) : ");
-       		scanf(" %c", &cont);
-	        } while(cont=='n');
+         
         
 	    return (0); 
 } 
