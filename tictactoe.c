@@ -145,6 +145,10 @@ void play(int turn)
 
     initialise(board);
     showInstructions();
+    
+    while (gameOver(board) == false)
+    
+    {
 
     int n;
 
@@ -173,7 +177,7 @@ void play(int turn)
 
           }
 
-           
+     } 
     }
 }
 
