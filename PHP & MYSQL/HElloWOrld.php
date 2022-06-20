@@ -1,0 +1,3 @@
+<?php 
+	echo "Hello world"; //print hello world
+?>
