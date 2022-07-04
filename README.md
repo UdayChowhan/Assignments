@@ -5,4 +5,4 @@ AI folder consists of TicTacToe C code using minimax algorithm and corresponding
 
 Bash Scripting folder consists of few bash scripts related to numeric operations and processes.
 
-PHP folder is work in progress
+
